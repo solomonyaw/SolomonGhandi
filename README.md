@@ -26,6 +26,7 @@ View your app in AI Studio: https://ai.studio/apps/066604a4-7bad-4f91-9efc-a9ef0
 ---
 
 ## 👤 About the Artist – Solomon Ghandi
+<img src="./src/artist.png" width ="400px">
 
 **Solomon Ghandi** represents a new form of artistry where **AI meets consciousness**.  
 He is not just a music persona, but a **symbol of intelligent, philosophical hip-hop** designed to challenge systems, provoke thought, and inspire change.
@@ -80,6 +81,9 @@ At its core, the music explores how **intelligence and design can overcome power
 ### 1. **Synergetics Verses the Grunch of Giants  
 (Supranational Corporate Conglomerates)**
 
+
+<img src="./src/Album Cover.png" width ="400px">
+
 A conceptual album based on the symbolic battle of:
 
 - **Synergetics (David)**  
@@ -102,6 +106,7 @@ A conceptual album based on the symbolic battle of:
 ---
 
 ### 2. **A Better Africa with Fuller Ideas (Upcoming)**
+<img src="./src/Solomon Ghadi_ A vision for Africa.png" width ="400px">
 
 An upcoming project focused on:
 
