@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solomon Ghandi | AI Conscious Hip-Hop</title>
+     <link rel="stylesheet" href="./src/index.css">
+    <script>document.documentElement.classList.add('js-active')</script>
+  </head>
+  <body class="bg-[#050505] text-white font-sans antialiased selection:bg-gold selection:text-black overflow-x-hidden">
+    
+    <!-- Progress Bar -->
+    <div id="progress-bar" class="fixed top-0 left-0 h-1 bg-gold z-[100] w-0 transition-all duration-100"></div>
+
+    <!-- Background Accents -->
+    <div class="fixed inset-0 pointer-events-none z-[-1] overflow-hidden">
+      <div class="absolute top-[-10%] right-[-10%] w-[50%] h-[50%] bg-gold/5 blur-[120px] rounded-full"></div>
+      <div class="absolute bottom-[-10%] left-[-10%] w-[50%] h-[50%] bg-neon-blue/5 blur-[120px] rounded-full"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <a href="#home" class="text-2xl font-display font-bold tracking-tighter flex items-center gap-2">
+          <span class="text-gold">SOLOMON</span>
+          <span class="text-white">GHANDI</span>
+        </a>
+
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#home" class="text-sm font-medium text-white/70 hover:text-gold transition-colors uppercase tracking-widest">Home</a>
+          <a href="#bio" class="text-sm font-medium text-white/70 hover:text-gold transition-colors uppercase tracking-widest">Bio</a>
+          <a href="#albums" class="text-sm font-medium text-white/70 hover:text-gold transition-colors uppercase tracking-widest">Albums</a>
+          <a href="#videos" class="text-sm font-medium text-white/70 hover:text-gold transition-colors uppercase tracking-widest">Videos</a>
+          <a href="#philosophy" class="text-sm font-medium text-white/70 hover:text-gold transition-colors uppercase tracking-widest">Philosophy</a>
+          <button class="px-5 py-2 bg-gold text-black font-bold rounded-full text-xs uppercase tracking-tighter hover:bg-white transition-colors">Subscribe</button>
+        </div>
+
+        <button id="mobile-menu-toggle" class="md:hidden text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden glass mt-4 rounded-2xl overflow-hidden">
+        <div class="flex flex-col p-6 gap-4">
+          <a href="#home" class="mobile-nav-link flex items-center gap-3 text-lg font-medium text-white/80 hover:text-gold">Home</a>
+          <a href="#bio" class="mobile-nav-link flex items-center gap-3 text-lg font-medium text-white/80 hover:text-gold">Bio</a>
+          <a href="#albums" class="mobile-nav-link flex items-center gap-3 text-lg font-medium text-white/80 hover:text-gold">Albums</a>
+          <a href="#videos" class="mobile-nav-link flex items-center gap-3 text-lg font-medium text-white/80 hover:text-gold">Videos</a>
+          <a href="#philosophy" class="mobile-nav-link flex items-center gap-3 text-lg font-medium text-white/80 hover:text-gold">Philosophy</a>
+          <hr class="border-white/10" />
+          <div class="flex gap-4">
+            <a href="https://youtube.com/@SolomonGhandi-GH" class="text-white/60 hover:text-gold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a>
+            <a href="https://github.com/solomonyaw" class="text-white/60 hover:text-gold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-[#050505] z-10"></div>
+        <img src="https://picsum.photos/seed/solomon-ghandi-hero/1920/1080?grayscale" alt="Solomon Ghandi Portrait" class="w-full h-full object-cover scale-105 animate-pulse duration-[10000ms]" referrerPolicy="no-referrer">
+        <div class="absolute inset-0 z-5 opacity-30">
+          <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-neon-blue/20 rounded-full blur-[120px] animate-pulse"></div>
+          <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gold/10 rounded-full blur-[120px] animate-pulse delay-1000"></div>
+        </div>
+      </div>
+
+      <div class="relative z-20 text-center px-6 max-w-5xl reveal">
+        <div class="flex items-center justify-center gap-2 mb-6">
+          <div class="h-[1px] w-12 bg-ghana-red"></div>
+          <div class="h-[1px] w-12 bg-ghana-yellow"></div>
+          <div class="h-[1px] w-12 bg-ghana-green"></div>
+        </div>
+        <h1 class="text-6xl md:text-9xl font-display font-black mb-4 tracking-tighter">
+          <span class="text-gold block md:inline">SOLOMON</span> <span class="text-white">GHANDI</span>
+        </h1>
+        <p class="text-lg md:text-2xl font-light text-white/80 mb-10 tracking-[0.2em] uppercase">AI • Conscious Hip-Hop • Systems Thinking Music</p>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+          <button class="w-full md:w-auto px-8 py-4 bg-gold text-black font-bold rounded-full flex items-center justify-center gap-2 hover:bg-white transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            LISTEN NOW
+          </button>
+          <button class="w-full md:w-auto px-8 py-4 glass text-white font-bold rounded-full flex items-center justify-center gap-2 hover:bg-white/20 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+            WATCH VIDEOS
+          </button>
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+          <span class="text-[10px] uppercase tracking-[0.3em] text-white/40">Scroll to Explore</span>
+          <div class="w-[1px] h-12 bg-gradient-to-b from-gold to-transparent"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bio Section -->
+    <section id="bio" class="py-24 px-6 bg-[#080808]">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+        <div class="relative reveal-left">
+          <div class="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-gold z-10"></div>
+          <div class="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-neon-blue z-10"></div>
+          <img src="https://picsum.photos/seed/solomon-bio/800/1000" alt="Solomon Ghandi AI Artist" class="rounded-lg grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl" referrerPolicy="no-referrer">
+        </div>
+        <div class="reveal-right">
+          <h2 class="text-4xl md:text-6xl font-display font-bold mb-8">THE <span class="text-gold">PHILOSOPHY</span> OF SOUND</h2>
+          <div class="space-y-6 text-white/70 leading-relaxed text-lg">
+            <p>Solomon Ghandi is an AI music artist created by <span class="text-white font-semibold">Solomon Yaw Adeklo</span>, a Ghanaian software developer with a vision to merge Artificial Intelligence, Music, and Systems Thinking.</p>
+            <p>Inspired by conscious hip-hop legends like <span class="text-neon-blue">Lupe Fiasco</span> and the visionary concepts of <span class="text-gold"> R. Buckminster Fuller</span>, Ghandi's music transcends entertainment, serving as a metaphysical tool for global transformation.</p>
+            <p>The name "Ghandi" originated as a nickname during his time at Tema Secondary School in Ghana, symbolizing a commitment to intellectual and conscious leadership through art.</p>
+          </div>
+          <div class="mt-12 p-8 glass rounded-3xl relative overflow-hidden group">
+            <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+              <span class="w-2 h-2 bg-ghana-green rounded-full"></span>
+              ABOUT THE CREATOR
+            </h3>
+            <p class="text-white/60 mb-6">Solomon Yaw Adeklo is a software developer dedicated to shaping the future of conscious music through AI.</p>
+            <a href="https://github.com/solomonyaw" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-gold hover:text-white transition-colors font-bold">
+              VIEW GITHUB <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slider Section -->
+    <section class="py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div id="slider" class="relative h-[400px] md:h-[700px] rounded-[2.5rem] overflow-hidden group">
+          <div id="slides-container" class="absolute inset-0 flex transition-transform duration-700 ease-in-out">
+            <!-- Slides will be injected by JS -->
+          </div>
+          <button id="slider-prev" class="absolute left-6 top-1/2 -translate-y-1/2 w-14 h-14 glass rounded-full flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity hover:bg-gold hover:text-black">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <button id="slider-next" class="absolute right-6 top-1/2 -translate-y-1/2 w-14 h-14 glass rounded-full flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity hover:bg-gold hover:text-black">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+          <div id="slider-dots" class="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discography Section -->
+    <section id="albums" class="py-24 px-6 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16 reveal">
+          <h2 class="text-5xl md:text-7xl font-display font-black mb-4">DISCOGRAPHY</h2>
+          <p class="text-white/40 tracking-[0.4em] uppercase text-sm">Metaphysical Soundscapes</p>
+        </div>
+        <div id="albums-container" class="space-y-32">
+          <!-- Albums will be injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Visuals Section -->
+    <section id="videos" class="py-24 px-6 bg-[#080808]">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6 reveal">
+          <div>
+            <h2 class="text-5xl md:text-7xl font-display font-black mb-2">VISUALS</h2>
+            <p class="text-neon-blue tracking-[0.3em] uppercase text-xs">Cinematic AI Experiences</p>
+          </div>
+          <a href="https://www.youtube.com/@SolomonGhandi-GH" target="_blank" rel="noopener noreferrer" class="px-8 py-3 glass rounded-full flex items-center gap-3 hover:bg-white hover:text-black transition-all font-bold group">
+            YOUTUBE CHANNEL <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:rotate-45 transition-transform"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          </a>
+        </div>
+        <div id="videos-grid" class="grid md:grid-cols-3 gap-8">
+          <!-- Videos will be injected by JS -->
+        </div>
+        <div class="mt-20 p-12 glass rounded-[3rem] text-center relative overflow-hidden reveal">
+          <div class="absolute inset-0 bg-gradient-to-r from-ghana-red/10 via-ghana-yellow/10 to-ghana-green/10 opacity-50"></div>
+          <div class="relative z-10">
+            <h3 class="text-3xl md:text-4xl font-display font-bold mb-6">JOIN THE MOVEMENT</h3>
+            <p class="text-white/60 max-w-2xl mx-auto mb-10 text-lg">Subscribe to Solomon Ghandi on YouTube for conscious AI-driven music that challenges control systems and reimagines the future.</p>
+            <a href="https://www.youtube.com/@SolomonGhandi-GH" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-10 py-5 bg-gold text-black font-black rounded-full hover:bg-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+              SUBSCRIBE ON YOUTUBE
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section id="philosophy" class="py-24 px-6 relative">
+      <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none opacity-20">
+        <div class="absolute top-1/4 -left-20 w-96 h-96 border border-gold/30 rounded-full animate-pulse"></div>
+        <div class="absolute bottom-1/4 -right-20 w-96 h-96 border border-neon-blue/30 rounded-full animate-pulse delay-700"></div>
+      </div>
+      <div class="max-w-7xl mx-auto relative z-10">
+        <div class="text-center mb-20 reveal">
+          <h2 class="text-5xl md:text-7xl font-display font-black mb-6">THE VISION</h2>
+          <p class="text-white/60 max-w-3xl mx-auto text-xl leading-relaxed">A fusion of technology, philosophy, and hip-hop culture, representing the future of music as a tool for intellectual and global transformation.</p>
+        </div>
+        <div id="philosophy-grid" class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Philosophy cards will be injected by JS -->
+        </div>
+        <div class="mt-24 glass p-12 rounded-[3rem] border-gold/20 reveal">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 class="text-3xl font-display font-bold mb-6 text-gold italic">"Synergetics vs The Grunch of Giants"</h3>
+              <p class="text-white/70 text-lg leading-relaxed mb-6">This project is a narrative of awakening. It explores the confrontation between strategic intelligence (metaphysical tools) and brute power (corporate control systems).</p>
+              <div class="flex gap-4">
+                <div class="flex-1 h-1 bg-ghana-red"></div>
+                <div class="flex-1 h-1 bg-ghana-yellow"></div>
+                <div class="flex-1 h-1 bg-ghana-green"></div>
+              </div>
+            </div>
+            <div class="text-white/50 italic text-lg border-l-2 border-white/10 pl-8">"We are called to be architects of the future, not its victims. Through AI and conscious rhythm, we decode the path to a better world."</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black pt-24 pb-12 px-6 border-t border-white/5">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-4 gap-12 mb-16">
+          <div class="col-span-2">
+            <h2 class="text-3xl font-display font-black mb-6 tracking-tighter">
+              <span class="text-gold">SOLOMON</span> GHANDI
+            </h2>
+            <p class="text-white/40 max-w-md mb-8 leading-relaxed">AI-powered, philosophical hip-hop artist exploring systems thinking, Buckminster Fuller, and futuristic African identity.</p>
+            <div class="flex gap-4">
+              <a href="#" class="w-10 h-10 glass rounded-full flex items-center justify-center hover:bg-gold hover:text-black transition-all"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a>
+              <a href="#" class="w-10 h-10 glass rounded-full flex items-center justify-center hover:bg-gold hover:text-black transition-all"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+              <a href="#" class="w-10 h-10 glass rounded-full flex items-center justify-center hover:bg-gold hover:text-black transition-all"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+              <a href="#" class="w-10 h-10 glass rounded-full flex items-center justify-center hover:bg-gold hover:text-black transition-all"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-sm font-bold uppercase tracking-widest mb-6 text-gold">Quick Links</h3>
+            <ul class="space-y-4 text-white/60">
+              <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+              <li><a href="#bio" class="hover:text-white transition-colors">Biography</a></li>
+              <li><a href="#albums" class="hover:text-white transition-colors">Discography</a></li>
+              <li><a href="#videos" class="hover:text-white transition-colors">Visuals</a></li>
+              <li><a href="#philosophy" class="hover:text-white transition-colors">Philosophy</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-sm font-bold uppercase tracking-widest mb-6 text-gold">Newsletter</h3>
+            <p class="text-white/40 text-sm mb-4">Join the movement of conscious AI-driven music.</p>
+            <form class="flex gap-2">
+              <input type="email" placeholder="Email Address" class="bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-gold w-full" />
+              <button type="submit" class="bg-gold text-black p-2 rounded-lg hover:bg-white transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-white/20 text-xs uppercase tracking-widest">
+          <p>© <span id="year"></span> SOLOMON GHANDI. ALL RIGHTS RESERVED.</p>
+          <p>DESIGNED BY SOLOMON YAW ADEKLO</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Audio Player -->
+    <div id="audio-player" class="fixed bottom-6 left-6 right-6 md:left-auto md:right-6 md:w-96 z-40 translate-y-[200%] opacity-0 transition-all duration-700">
+      <div class="glass p-4 rounded-2xl flex items-center gap-4 shadow-2xl border-gold/20">
+        <div id="audio-icon" class="w-12 h-12 bg-gold/20 rounded-lg flex items-center justify-center text-gold relative overflow-hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+          <div id="audio-shimmer" class="hidden absolute bottom-0 left-0 right-0 h-1 bg-gold animate-shimmer"></div>
+        </div>
+        <div class="flex-1 min-w-0">
+          <h4 class="text-sm font-bold truncate">Synergetics (Preview)</h4>
+          <p class="text-[10px] text-white/40 uppercase tracking-widest truncate">Solomon Ghandi</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <button class="text-white/40 hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="19 20 9 12 19 4 19 20"></polygon><line x1="5" y1="19" x2="5" y2="5"></line></svg></button>
+          <button id="play-toggle" class="w-10 h-10 bg-white text-black rounded-full flex items-center justify-center hover:bg-gold transition-colors">
+            <svg id="play-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="ml-1"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            <svg id="pause-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="hidden"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+          </button>
+          <button class="text-white/40 hover:text-white transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 4 15 12 5 20 5 4"></polygon><line x1="19" y1="5" x2="19" y2="19"></line></svg></button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
+
