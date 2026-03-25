@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/index.css">
     <title>Solomon Ghandi | AI Conscious Hip-Hop</title>
-     <link rel="stylesheet" href="./src/index.css">
-    <script>document.documentElement.classList.add('js-active')</script>
   </head>
   <body class="bg-[#050505] text-white font-sans antialiased selection:bg-gold selection:text-black overflow-x-hidden">
     
@@ -101,7 +100,7 @@
         <div class="relative reveal-left">
           <div class="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-gold z-10"></div>
           <div class="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-neon-blue z-10"></div>
-          <img src="https://picsum.photos/seed/solomon-bio/800/1000" alt="Solomon Ghandi AI Artist" class="rounded-lg grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl" referrerPolicy="no-referrer">
+          <img src="./src/artist.png" alt="Solomon Ghandi AI Artist" class="rounded-lg grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl" referrerPolicy="no-referrer">
         </div>
         <div class="reveal-right">
           <h2 class="text-4xl md:text-6xl font-display font-bold mb-8">THE <span class="text-gold">PHILOSOPHY</span> OF SOUND</h2>
@@ -134,6 +133,7 @@
           <div id="slides-container" class="absolute inset-0 flex transition-transform duration-700 ease-in-out">
             <!-- Slides will be injected by JS -->
           </div>
+          <img src="/src/cover.png" alt="">
           <button id="slider-prev" class="absolute left-6 top-1/2 -translate-y-1/2 w-14 h-14 glass rounded-full flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity hover:bg-gold hover:text-black">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
           </button>
@@ -153,7 +153,49 @@
           <p class="text-white/40 tracking-[0.4em] uppercase text-sm">Metaphysical Soundscapes</p>
         </div>
         <div id="albums-container" class="space-y-32">
-          <!-- Albums will be injected by JS -->
+          <!-- Album 1 -->
+          <div class="flex flex-col md:flex-row gap-12 items-center reveal">
+            <div class="w-full md:w-1/2 relative group">
+              <div class="absolute inset-0 bg-gold/20 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <img src="./src/Album Cover.png" alt="Synergetics Verses the Grunch of Giants (Supranational Corporate Conglomerates)" class="w-full aspect-square object-cover rounded-2xl shadow-2xl relative z-10 border border-white/10" referrerPolicy="no-referrer">
+            </div>
+            <div class="w-full md:w-1/2 space-y-6">
+              <div class="flex items-center gap-4 text-gold">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="animate-spin-slow"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle></svg>
+                <span class="font-mono text-sm tracking-widest">2026</span>
+              </div>
+              <h3 class="text-4xl md:text-5xl font-display font-bold leading-tight">Synergetics Verses the Grunch of Giants (Supranational Corporate Conglomerates)</h3>
+              <p class="text-xl text-white/80 font-medium italic border-l-4 border-gold pl-6">A bold, thought-provoking hip-hop project(album) exploring the battle between systems of control and systems of intelligence.</p>
+              <div class="space-y-4 text-white/60 leading-relaxed">
+                <p>Synergetics Verses the Grunch of Giants (Supranational Corporate Conglomerates) is a bold, thought-provoking hip-hop project(album) by Solomon Ghandi, the AI music persona created by Ghanaian software developer Solomon Yaw Adeklo. The album explores the battle between systems of control and systems of intelligence, drawing inspiration from the works of R. Buckminster Fuller. Through layered storytelling and conscious lyricism, the project positions Synergetics as a metaphor for advanced, weightless knowledge and strategic thinking—akin to David—standing against the Grunch of Giants, a representation of powerful supranational corporate systems and hidden global structures. Blending futuristic soundscapes with hip-hop roots, the album challenges listeners to rethink power, systems, and human potential. It is not just music—it is a conceptual journey into intelligence, awareness, and the possibility of redesigning the world through knowledge and higher thinking.</p>
+              </div>
+              <button class="flex items-center gap-3 text-gold font-bold tracking-widest uppercase text-sm group">
+                Explore Concept <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-2 transition-transform"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </div>
+          <!-- Album 2 -->
+          <div class="flex flex-col md:flex-row-reverse gap-12 items-center reveal">
+            <div class="w-full md:w-1/2 relative group">
+              <div class="absolute inset-0 bg-gold/20 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <img src="./src/Solomon Ghadi_ A vision for Africa.png" height="850px" alt="A Better Africa with Fuller Ideas" class="w-full aspect-square object-cover rounded-2xl shadow-2xl relative z-10 border border-white/10" referrerPolicy="no-referrer">
+              <div class="absolute top-6 left-6 z-20 bg-neon-blue text-black px-4 py-1 rounded-full text-xs font-black tracking-tighter">UPCOMING</div>
+            </div>
+            <div class="w-full md:w-1/2 space-y-6">
+              <div class="flex items-center gap-4 text-gold">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="animate-spin-slow"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle></svg>
+                <span class="font-mono text-sm tracking-widest">2026</span>
+              </div>
+              <h3 class="text-4xl md:text-5xl font-display font-bold leading-tight">A Better Africa with Fuller Ideas</h3>
+              <p class="text-xl text-white/80 font-medium italic border-l-4 border-gold pl-6">Exploring African development through systems thinking and innovation.</p>
+              <div class="space-y-4 text-white/60 leading-relaxed">
+                <p>This album explores African development through systems thinking and innovation inspired by Buckminster Fuller. It reimagines Africa through the lens of AI, sustainability, and technological advancement, focusing on intelligence, design, and consciousness as the drivers for a better future.</p>
+              </div>
+              <a href="https://www.youtube.com/@SolomonGhandi-GH"><button class="flex items-center gap-3 text-gold font-bold tracking-widest uppercase text-sm group">
+                Explore Concept<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:translate-x-2 transition-transform"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button></a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -163,7 +205,7 @@
       <div class="max-w-7xl mx-auto">
         <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6 reveal">
           <div>
-            <h2 class="text-5xl md:text-7xl font-display font-black mb-2">VISUALS</h2>
+            <h2 class="text-5xl md:text-7xl font-display font-black mb-2">VISUALS (SAMPLE VIDEOS OF EXISTING ALBUMS)</h2>
             <p class="text-neon-blue tracking-[0.3em] uppercase text-xs">Cinematic AI Experiences</p>
           </div>
           <a href="https://www.youtube.com/@SolomonGhandi-GH" target="_blank" rel="noopener noreferrer" class="px-8 py-3 glass rounded-full flex items-center gap-3 hover:bg-white hover:text-black transition-all font-bold group">
@@ -171,16 +213,33 @@
           </a>
         </div>
         <div id="videos-grid" class="grid md:grid-cols-3 gap-8">
-          <!-- Videos will be injected by JS -->
+          <div class="group reveal">
+            <div class="relative aspect-video rounded-2xl overflow-hidden mb-4 border border-white/10 bg-black">
+              <iframe class="w-full h-full" src="https://www.youtube.com/embed/KkbRJTUacV4" title="Solomon Ghandi - Synergetics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <h3 class="text-xl font-bold group-hover:text-gold transition-colors">Solomon Ghandi - Synergetics</h3>
+          </div>
+          <div class="group reveal">
+            <div class="relative aspect-video rounded-2xl overflow-hidden mb-4 border border-white/10 bg-black">
+              <iframe class="w-full h-full" src="https://www.youtube.com/embed/o1XQfiYbbJk" title="The Grunch of Giants" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <h3 class="text-xl font-bold group-hover:text-gold transition-colors">The Grunch of Giants</h3>
+          </div>
+          <div class="group reveal">
+            <div class="relative aspect-video rounded-2xl overflow-hidden mb-4 border border-white/10 bg-black">
+              <iframe class="w-full h-full" src="https://www.youtube.com/embed/6en7EYwtcAc" title="Metaphysical Intelligence" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <h3 class="text-xl font-bold group-hover:text-gold transition-colors">Metaphysical Intelligence</h3>
+          </div>
         </div>
         <div class="mt-20 p-12 glass rounded-[3rem] text-center relative overflow-hidden reveal">
           <div class="absolute inset-0 bg-gradient-to-r from-ghana-red/10 via-ghana-yellow/10 to-ghana-green/10 opacity-50"></div>
           <div class="relative z-10">
             <h3 class="text-3xl md:text-4xl font-display font-bold mb-6">JOIN THE MOVEMENT</h3>
-            <p class="text-white/60 max-w-2xl mx-auto mb-10 text-lg">Subscribe to Solomon Ghandi on YouTube for conscious AI-driven music that challenges control systems and reimagines the future.</p>
+            <p class="text-white/60 max-w-2xl mx-auto mb-10 text-lg">Join the movement of conscious AI-driven music. Subscribe to Solomon Ghandi on YouTube for conscious AI-driven music that challenges control systems and reimagines the future.</p>
             <a href="https://www.youtube.com/@SolomonGhandi-GH" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-10 py-5 bg-gold text-black font-black rounded-full hover:bg-white transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
-              SUBSCRIBE ON YOUTUBE
+              Subscribe to Solomon Ghandi on YouTube
             </a>
           </div>
         </div>
@@ -199,7 +258,34 @@
           <p class="text-white/60 max-w-3xl mx-auto text-xl leading-relaxed">A fusion of technology, philosophy, and hip-hop culture, representing the future of music as a tool for intellectual and global transformation.</p>
         </div>
         <div id="philosophy-grid" class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- Philosophy cards will be injected by JS -->
+          <div class="glass p-10 rounded-[2.5rem] hover:border-gold/50 transition-colors group reveal">
+            <div class="mb-6 p-4 rounded-2xl bg-white/5 inline-block text-gold group-hover:scale-110 transition-transform">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.54-2.44V4.5A2.5 2.5 0 0 1 7 2z"></path><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.54-2.44V4.5A2.5 2.5 0 0 0 17 2z"></path></svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold mb-4">Systems Thinking</h3>
+            <p class="text-white/50 leading-relaxed">Decoding the interconnectedness of global control systems through metaphysical tools.</p>
+          </div>
+          <div class="glass p-10 rounded-[2.5rem] hover:border-gold/50 transition-colors group reveal">
+            <div class="mb-6 p-4 rounded-2xl bg-white/5 inline-block text-neon-blue group-hover:scale-110 transition-transform">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.54-2.44V4.5A2.5 2.5 0 0 1 7 2z"></path><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.54-2.44V4.5A2.5 2.5 0 0 0 17 2z"></path></svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold mb-4">AI Integration</h3>
+            <p class="text-white/50 leading-relaxed">Leveraging artificial intelligence for conscious expression and narrative awakening.</p>
+          </div>
+          <div class="glass p-10 rounded-[2.5rem] hover:border-gold/50 transition-colors group reveal">
+            <div class="mb-6 p-4 rounded-2xl bg-white/5 inline-block text-ghana-green group-hover:scale-110 transition-transform">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.54-2.44V4.5A2.5 2.5 0 0 1 7 2z"></path><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.54-2.44V4.5A2.5 2.5 0 0 0 17 2z"></path></svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold mb-4">Design Science</h3>
+            <p class="text-white/50 leading-relaxed">Inspired by R. Buckminster Fuller to create a world that works for everyone.</p>
+          </div>
+          <div class="glass p-10 rounded-[2.5rem] hover:border-gold/50 transition-colors group reveal">
+            <div class="mb-6 p-4 rounded-2xl bg-white/5 inline-block text-ghana-red group-hover:scale-110 transition-transform">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.54-2.44V4.5A2.5 2.5 0 0 1 7 2z"></path><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.54-2.44V4.5A2.5 2.5 0 0 0 17 2z"></path></svg>
+            </div>
+            <h3 class="text-2xl font-display font-bold mb-4">Conscious Hip-Hop</h3>
+            <p class="text-white/50 leading-relaxed">Music as a strategic tool for education and challenging supranational power.</p>
+          </div>
         </div>
         <div class="mt-24 glass p-12 rounded-[3rem] border-gold/20 reveal">
           <div class="grid md:grid-cols-2 gap-12 items-center">

@@ -37,7 +37,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
-  tracking-tight: -0.025em;
+  letter-spacing: -0.025em;
 }
 
 a {
@@ -431,17 +431,18 @@ img {
   transition: all 0.8s ease-out;
 }
 
-.js-active .reveal {
+/* Only hide if JS is ready and the element isn't active yet */
+.reveal-ready .reveal:not(.active) {
   opacity: 0;
   transform: translateY(30px);
 }
 
-.js-active .reveal-left {
+.reveal-ready .reveal-left:not(.active) {
   opacity: 0;
   transform: translateX(-50px);
 }
 
-.js-active .reveal-right {
+.reveal-ready .reveal-right:not(.active) {
   opacity: 0;
   transform: translateX(50px);
 }
