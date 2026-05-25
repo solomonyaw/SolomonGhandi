@@ -29,16 +29,30 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('progress-bar').style.width = scrolled + "%";
   });
 
-  // Mobile Menu
+  // Mobile Menu with Duplicate Prevention
   const menuToggle = document.getElementById('mobile-menu-toggle');
   const mobileMenu = document.getElementById('mobile-menu');
-  menuToggle.addEventListener('click', () => {
-    mobileMenu.classList.toggle('translate-y-0');
-  });
+  if (menuToggle && mobileMenu) {
+    if (menuToggle.getAttribute('data-menu-initialized') !== 'true') {
+      menuToggle.setAttribute('data-menu-initialized', 'true');
+      menuToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        mobileMenu.classList.toggle('hidden');
+      });
 
-  document.querySelectorAll('.mobile-nav-link').forEach(link => {
-    link.addEventListener('click', () => mobileMenu.classList.remove('translate-y-0'));
-  });
+      document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!mobileMenu.contains(e.target) && e.target !== menuToggle && !menuToggle.contains(e.target)) {
+          mobileMenu.classList.add('hidden');
+        }
+      });
+    }
+  }
 
   // Slider Logic
   const slidesContainer = document.getElementById('slides-container');
